@@ -1,0 +1,28 @@
+{
+  "name": "git-advanced",
+  "version": "1.0.0",
+  "description": "",
+  "main": "commitlint.config.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "commit": "cz"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nicolastanski/git-advanced.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nicolastanski/git-advanced/issues"
+  },
+  "homepage": "https://github.com/nicolastanski/git-advanced#readme",
+  "devDependencies": {
+    "husky": "^4.3.6"
+  },
+  "husky": {
+    "hooks": {
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+    }
+  }
+}
